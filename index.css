@@ -1,0 +1,150 @@
+@use "@material/button";
+
+@include button.core-styles;
+@font-face {
+font-family: hermit;
+src: url(hermit-medium-webfont.ttf);
+}
+body {
+  font-family: hermit;
+   background-color: #000000;
+}
+.homework {
+ color: #00FA9A;
+}
+.header {
+text-align: center;
+color: #00FF00;
+}
+@keyframes popup {
+from {width: 0px;}
+to {width: 320px;}
+}
+.sidenav {
+height: 100%;
+width: 320px;
+position: fixed;
+z-index: 2;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+padding-top: 20px;
+animation-name: popup;
+animation-duration: 0.4s
+
+}
+.sidebutton {
+z-index: 5;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+.sidenav a {
+padding: 6px 8px 6px 16px;
+text-decoration: none;
+font-size: 25px;
+color: #818181;
+display: block;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.main {
+margin-left: 160px; /* Same as the width of the sidenav */
+font-size: 28px; /* Increased text to enable scrolling */
+padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+.btn {
+position: relative;
+
+display: block;
+margin: 0px auto;
+padding: 0;
+
+overflow: hidden;
+
+border-width: 0;
+outline: none;
+border-radius: 2px;
+box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+background-color: #2ecc71;
+color: #ecf0f1;
+
+transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+background-color: #27ae60;
+}
+
+.btn > * {
+position: relative;
+}
+
+.btn span {
+display: block;
+padding: 12px 24px;
+}
+
+.btn:before {
+content: "";
+
+position: absolute;
+top: 50%;
+left: 50%;
+
+display: block;
+width: 10;
+padding-top: 0;
+  
+border-radius: 100%;
+
+background-color: rgba(236, 240, 241, .3);
+
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+width: 120%;
+padding-top: 120%;
+
+transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+
+
+
+
+h2 {
+font-weight: normal;
+}
+
+.btn.orange {
+background-color: #e67e22;
+}
+
+.btn.orange:hover, .btn.orange:focus {
+background-color: #d35400;
+}
+
+.btn.red {
+background-color: #e74c3c;
+}
+
+.btn.red:hover, .btn.red:focus {
+background-color: #c0392b;
+}
