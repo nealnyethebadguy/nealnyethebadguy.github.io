@@ -17,12 +17,12 @@ text-align: center;
 color: #00FF00;
 }
 @keyframes popup {
-from {width: 0px;}
-to {width: 320px;}
+from {width: 0;}
+to {width: 15%;}
 }
 .sidenav {
 height: 100%;
-width: 320px;
+width: 15%;
 position: fixed;
 z-index: 2;
 top: 0;
