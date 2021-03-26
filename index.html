@@ -3,6 +3,13 @@
   <link rel="stylesheet" href="index.css">
 
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/sidebar.js"></script>
+<script>
+    $(document).ready(function(){
+        loadNavDiv();
+    });
+</script>
 <script>
 
 let sidebar= null;
@@ -16,13 +23,6 @@ function sidebartoggle() {
 </script>
 </head>
 <body>
-	<div class="sidenav" id="sidebar" style="display: none">
-  <a href=""></a>
-  <a href=""></a>
-  <a href="/">Home</a>
-  <a href="/performance-assessment">current school project</a>
-  <a href="https://suicidepreventionlifeline.org/talk-to-someone-now/">I wanna die</a>  
-</div>
 <div class="sidebutton" onclick="sidebartoggle()">
   <button class="btn" type="button"><span>Side bar</span></button>
 
