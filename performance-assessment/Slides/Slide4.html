@@ -1,0 +1,60 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/index.css">
+  <title>Bad Guy Exhibit</title>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/sidebar.js"></script>
+<script>
+    $(document).ready(function(){
+        loadNavbarDiv();
+    });
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="sidebutton" onclick="sidebartoggle()">
+  <button class="btn" type="button"><span>Side bar</span></button>
+
+</div>
+ 	<div class="header">
+		<h1>The Fifth Amendment</h1>
+	</div>
+
+	<br><br>
+	<!-- Hey Heal since you are an idiot here is a reminder to edit this part-->
+<ul>
+<li><p>The fifth amendment helps meet the goal of Establishing Justice. An example of this would be the protection that is granted to the witnesses, the protection against self incrimination. </p>
+</li>
+<li><p>An example of how this would be helpful is in a court case, if the witness was also breaking a crime during the time of testimony, the witness can please the fifth. What this will do is let the witness testify without incriminating themselves.</p>
+</li>
+</ul>
+
+
+	<!-- Nothing Past this mate-->
+<a class="back" href="/performance-assessment/Slides/Slide3.html"><< Back</a>
+<a class="next" href="/performance-assessment/">Next >></a>
+</body>
+</html>
