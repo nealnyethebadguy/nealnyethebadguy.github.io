@@ -1,0 +1,62 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/index.css">
+  <title>Bad Guy Exhibit</title>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/sidebar.js"></script>
+<script>
+    $(document).ready(function(){
+        loadNavbarDiv();
+    });
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="sidebutton" onclick="sidebartoggle()">
+  <button class="btn" type="button"><span>Side bar</span></button>
+
+</div>
+ 	<div class="header">
+		<h1>What are the goals of the Constitution?</h1>
+	</div>
+
+	<br><br>
+	<!-- Hey Heal since you are an idiot here is a reminder to edit this part-->
+<p>Goals: </p>
+<ol>
+<li>Form a more perfect union </li>
+<li>Establish Justice</li>
+<li>Ensure domestic tranquility</li>
+<li>Provide for the common defense</li>
+<li>Promote the general welfare </li>
+<li>Secure the blessings of liberty to ourselves and our prosperity </li>
+</ol>
+<p>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</p>
+	<!-- Nothing Past this mate-->
+<a class="back" href="/performance-assessment/"><< Back</a>
+<a class="next" href="/performance-assessment/Slides/Slide2.html">Next >></a>
+</body>
+</html>
