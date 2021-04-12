@@ -1,0 +1,61 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/index.css">
+  <title>Bad Guy Exhibit</title>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/sidebar.js"></script>
+<script>
+    $(document).ready(function(){
+        loadNavbarDiv();
+    });
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="sidebutton" onclick="sidebartoggle()">
+  <button class="btn" type="button"><span>Side bar</span></button>
+
+</div>
+ 	<div class="header">
+		<h1>The First Amendment</h1>
+	</div>
+
+	<br><br>
+	<!-- Hey Heal since you are an idiot here is a reminder to edit this part-->
+<ul>
+<li><p>What this amendment does is grant freedom of speech, freedom of press, freedom on religion and freedom to peacefully assemble. These rights directly tie into the goals to “Promote the general welfare” and “Secure the blessings of liberty to ourselves and our prosperity”.</p>
+</li>
+<li><p>With these freedoms people can protest for rights to help meet the goal to “Promote the general welfare”.</p>
+</li>
+<li><p>The goal to “Secure the blessings of liberty to ourselves and our prosperity” is also met by the right freedom of speech, as with freedom of speech, you are free, or liberated.</p>
+</li>
+</ul>
+
+	<!-- Nothing Past this mate-->
+<a class="back" href="/performance-assessment/Slides/Slide2.html"><< Back</a>
+<a class="next" href="/performance-assessment/Slides/Slide4.html">Next >></a>
+</body>
+</html>
