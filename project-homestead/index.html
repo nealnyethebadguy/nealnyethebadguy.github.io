@@ -1,0 +1,64 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/index.css">
+  <title>Project Homestead</title>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/sidebar.js"></script>
+<script>
+    $(document).ready(function(){
+        loadNavbarDiv();
+    });
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="sidebutton" onclick="sidebartoggle()">
+  <button class="btn" type="button"><span>Side bar</span></button>
+
+</div>
+<h1>Concept: Homestead</h1>
+<p>A simple thing to help issues in the current wealth distribution system</p>
+<h3>Homestead contains-</h3>
+<ul>
+<li>Solar Panel roof</li>
+<li>Garden Lot</li>
+<li>Free Water (2 years)</li>
+<li>Internet (shared with other units, 1GBPS bus)</li>
+<li>Computer unit, integrated with homestead</li>
+</ul>
+<h3>Proposition</h3>
+<p>In order to modernize rural areas and to help solve issues of poverty and debt, I propose a solution, give people in need a one time offer, a simple homestead to help get them off their feet and become a more functioning member in society. This project aims to lessen the cost the government spends on people that may need help, while still increasing their quality of life.</p>
+<h3>Dimensions/design goals</h3>
+<p>While there are no set dimensions, there are a set of loose design goals</p>
+<ul>
+<li>Each unit should be completely modular, making it possible to combine more than one unit to make a family house.</li>
+<li>The vast majority of space should be taken care of vertically, in height, rather than horizontally to make the units light in land size.</li>
+<li>The units should be fairly modern, with equipment to help monitor electricity use, water use, and usage of other equipments</li>
+<li>The units should provide a relatively good quality of life, and should be pleasant to live in.</li>
+<li>The units should be cheap, under 50k Maximum budget per unit.</li>
+</ul>
+</body>
+</html>
