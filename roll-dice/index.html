@@ -1,0 +1,46 @@
+<html>
+<head>
+  <link rel="stylesheet" href="/index.css">
+  <title> Dice Roll</title>
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/sidebar.js"></script>
+<script>
+    $(document).ready(function(){
+        loadNavbarDiv();
+    });
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+<script>
+
+let sidebar= null;
+function sidebartoggle() {
+  if (document.getElementsByClassName("sidenav")[0].getAttribute("style") == "display: none") {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style", "")
+  } else {
+    document.getElementsByClassName("sidenav")[0].setAttribute("style","display: none")
+  }
+}
+</script>
+          <script>
+            function roll() {
+                
+                document.getElementById("quick").innerText = `you got ${Math.floor(Math.random() * (6 - 1 + 1)) + 1} and ${Math.floor(Math.random() * (6 - 1 + 1)) + 1}`
+            }
+        </script>
+</head>
+<body>
+        <button onclick="roll()"> Roll dice</button>
+        <p id="quick"></p>
+</body>
+</html>
