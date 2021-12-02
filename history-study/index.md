@@ -1,4 +1,4 @@
-<a href=powerpoint.pdf>Powerpoint</a>
+[Powerpoint](https://nealnyethebadguy.github.io/history-study/powerpoint.pdf)
 <h1>History Study guide</h1>
 <h3>People</h3>
 <ul>
